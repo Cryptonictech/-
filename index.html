@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><meta charset="utf-8" />
- 
-        <title>Tuts+ Chat Application</title>
+    <head><meta charset="utf-8">
+  <title>Tuts+ Chat Application</title>
         <meta name="description" content="Tuts+ Chat Application" />
         <link rel="stylesheet" href="style.css" />
     </head>
@@ -14,11 +13,12 @@ if(isset($_POST['enter'])){
         $_SESSION['name'] = stripslashes(htmlspecialchars($_POST['name']));
     }
     else{
-        echo '<span class="error">Please type in a name</span>';
+        echo <span class="error">Please type in a name</span>;
     }
 }
  
-function loginForm(){
+function loginForm()
+{
     <div id="loginform">
       <p>Please enter your name to continue!</p>
       <form action="index.php" method="post">
